@@ -24,7 +24,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="testimonials section" id="testimonials">
+    <section className="testimonials section" id="testimoni">
       <div className="container">
         <div className="section-title flex flex-row justify-between items-center">
           <div className="flex flex-col text-start">

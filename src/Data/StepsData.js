@@ -13,19 +13,19 @@ export const stepsData = [
   {
     id: 1,
     img: Bahan,
-    title: "Isi & Upload Bahan",
-    desc: "Lengkapi formulir dengan bahan foto, video, musik, dan lainnya.",
+    title: "Klik Pesan Sekarang lalu Isi Formulir",
+    desc: "Lengkapi formulir dengan bahan foto, video, musik, dan lainnya sesuai arahan.",
   },
-  {
+  { 
     id: 2,
     img: Hasil,
-    title: "Proses & Hasil",
-    desc: "Tim kami akan memproses, kemudian menyerahkan hasil final yang siap digunakan.",
+    title: "Proses & hasil",
+    desc: "Tim kami akan memproses sesuai permintaan customer, kemudian menyerahkan hasil final yang siap digunakan.",
   },
   {
     id: 3,
     img: Payment,
     title: "Lakukan Pembayaran",
-    desc: "Selesaikan pembayaran dengan berbagai metode pembayaran yang terpercaya.",
+    desc: "Selesaikan pembayaran setelah web 100% selesai, dengan berbagai metode pembayaran yang terpercaya.",
   },
 ];

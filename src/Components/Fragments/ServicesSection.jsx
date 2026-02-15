@@ -21,7 +21,7 @@ const ServicesSection = () => {
     <section className="services section bg-seccondary" id="services">
       <div className="container">
         <div className="section-title">
-          <h2 data-aos="fade-up" data-aos-delay="100">
+          <h2 className="text-[32px] sm:text-[50px]" data-aos="fade-up" data-aos-delay="100">
             Jadi di Effort.Dong ini kamu bisa dapat apa?
           </h2>
           <p data-aos="fade-up" data-aos-delay="200">

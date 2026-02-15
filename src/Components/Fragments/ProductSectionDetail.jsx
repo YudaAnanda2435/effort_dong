@@ -46,7 +46,7 @@ const ProductDetail = ({ onPreview }) => {
   return (
     <>
       <Navbar />
-      <section className="product-detail-section pt-32! pb-20 px-4 md:px-8 bg-dark min-h-screen">
+      <section className="product-detail-section pt-32! pb-20 px-4 md:px-8 bg-dark ">
         <div className="container mx-auto max-w-6xl">
           <BreadCrumbs />
 
@@ -54,11 +54,11 @@ const ProductDetail = ({ onPreview }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start ">
             {/* KOLOM KIRI: GAMBAR */}
             <div className="product-image-wrapper bg-white p-4 rounded-sm shadow-lg border border-gray-100">
-              <div className="relative bg-seccondary p-8! flex h-125 w-full overflow-hidden">
+              <div className="relative bg-seccondary p-4! sm:p-8! flex  w-full overflow-hidden">
                 <img
                   src={product.img}
                   alt={product.title}
-                  className="w-full h-full object-cover hover:scale-105 rounded-sm transition-transform duration-500"
+                  className="w-full h-full object-contain sm:object-cover hover:scale-105 rounded-sm transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 bg-dark backdrop-blur-sm px-4! py-1! rounded-full text-sm font-semibold text-seccondary shadow-sm">
                   {product.category || "Digital Product"}
@@ -67,12 +67,14 @@ const ProductDetail = ({ onPreview }) => {
             </div>
 
             {/* KOLOM KANAN: INFO */}
-            <div className="product-info space-y-6! max-h-[80vh] overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-seccondary mb-2!">
+            <div className="product-info space-y-6!   [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+              <div className="flex flex-col">
+                <h1
+                  className="text-3xl md:text-4xl flex text-start font-bold text-seccondary mb-2!"
+                >
                   {product.title}
                 </h1>
-                <p className="text-xl font-semibold text-seccondary">
+                <p className=" font-semibold text-seccondary">
                   Rp {product.price?.toLocaleString("id-ID") || "Hubungi Admin"}
                 </p>
               </div>
@@ -105,13 +107,21 @@ const ProductDetail = ({ onPreview }) => {
 
               {/* Buttons */}
               <div className="pt-4 flex flex-col sm:flex-row gap-4!">
-                <button className="flex-1 bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary hover:border hover:border-seccondary text-dark py-4! px-8! rounded-sm font-semibold transition-all shadow-lg flex justify-center items-center gap-2!">
+                <a
+                  target="_blank"
+                  href={product.form}
+                  className="flex-1 bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary! hover:border hover:border-seccondary text-dark! py-3! w-full rounded-sm font-semibold transition-all shadow-lg flex justify-center items-center gap-2!"
+                >
                   Pesan Sekarang <i className="bx bxl-whatsapp text-xl"></i>
-                </button>
-                <button className="flex-1 border-2 flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-4 px-8 rounded-sm font-semibold transition-all">
+                </a>
+                <a
+                  href="https://wa.me/6285559758465"
+                  target="_blank"
+                  className="flex-1 border-2 flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-3! w-full rounded-sm font-semibold transition-all"
+                >
                   Tanya Dulu
                   <FontAwesomeIcon icon={faHeadset} />
-                </button>
+                </a>
               </div>
               <a
                 href={product.prototype}

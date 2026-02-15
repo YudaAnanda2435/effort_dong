@@ -35,7 +35,7 @@ const OrderStepsSection = () => {
             data-aos-offset="0"
           >
             Order sekarang, jadinya{" "}
-            <span className="highlight text-dark! font-bold! italic">
+            <span className="highlight text-dark! font-semibold! italic">
               hari ini!
             </span>
           </h2>
