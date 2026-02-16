@@ -29,7 +29,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="services-grid overflow-y-auto no-scrollbar">
+        <div className="services-grid  no-scrollbar">
           {services.map((service, index) => (
             // 1. DIV PEMBUNGKUS (WRAPPER) UNTUK AOS
             // Grid akan mengatur div ini sebagai kolom

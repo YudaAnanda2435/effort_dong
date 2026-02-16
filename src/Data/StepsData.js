@@ -13,7 +13,7 @@ export const stepsData = [
   {
     id: 1,
     img: Bahan,
-    title: "Klik Pesan Sekarang lalu Isi Formulir",
+    title: "Klik Pesan & Isi Formulir",
     desc: "Lengkapi formulir dengan bahan foto, video, musik, dan lainnya sesuai arahan.",
   },
   { 

@@ -35,7 +35,7 @@
 @media (max-width: 600px){
   :root{
   --h1-font-size: 1.70rem !important;
-  --normal-font-size: 0.9rem;
+  --normal-font-size: 14px !important;
   }
 }
 
@@ -940,6 +940,8 @@ strong {
 .steps-display-pagination .swiper-pagination-bullet {
   background-color: #444;
   opacity: 1;
+  transition: all 0.3s;
+
 }
 
 .steps-display-pagination .swiper-pagination-bullet-active {
@@ -998,6 +1000,10 @@ strong {
 .step-item p {
   color: var(--text-color-light);
   padding-left: 56px; /* Sejajar dengan teks judul */
+}
+
+.step-desc {
+    font-size: var(--normal-font-size);
 }
 
 .progress-bar {

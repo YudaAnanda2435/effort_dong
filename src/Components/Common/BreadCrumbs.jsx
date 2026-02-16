@@ -5,7 +5,7 @@ const BreadCrumbs = () => {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);
 
-  const getName = (value, index) => {
+  const getName = (value) => {
     const isId = !isNaN(value);
 
     if (isId) {

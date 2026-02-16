@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
-import {stepsData} from "../../Data/StepsData"
+import { stepsData } from "../../Data/StepsData";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
@@ -101,6 +101,7 @@ const OrderStepsSection = () => {
                   <h4>{step.title}</h4>
                 </div>
                 <p
+                 className="step-desc"
                   data-aos="zoom-in"
                   data-aos-delay="500"
                   data-aos-duration="800"
