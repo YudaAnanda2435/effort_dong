@@ -13,22 +13,16 @@ const BlogDetailPage = () => {
   // 2. Blog Terkait (Related)
   const relatedBlogs = blogs.filter((b) => b.id !== Number(id)).slice(0, 3);
 
-  // 3. PERBAIKAN: Scroll ke atas dengan setTimeout
+  // 3. Scroll ke atas
   useEffect(() => {
-    // setTimeout memaksa perintah ini dijalankan setelah DOM selesai di-render
-    const timer = setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "auto", // Gunakan 'auto' agar scroll instan (mengabaikan smooth scroll global)
-      });
-    }, 0);
-
-    // Cleanup function
-    return () => clearTimeout(timer);
+    window.scrollTo(0, 0);
   }, [id]);
 
-  // --- FUNGSI HELPER UNTUK RENDER KONTEN ---
+  // 4. Handle Not Found
+  if (!blog) {
+    return <Navigate to="/" replace />;
+  }
+  // --- FUNGSI HELPER UNTUK RENDER KONTEN (INI YANG SEBELUMNYA KOSONG) ---
   const renderContent = (contentData) => {
     if (!contentData) return null;
 
@@ -36,19 +30,13 @@ const BlogDetailPage = () => {
       switch (block.type) {
         case "paragraph":
           return (
-            <p
-              key={index}
-              className=" mb-6! paragraph-blog text-gray-300 leading-normal md:leading-relaxed"
-            >
+            <p key={index} className=" mb-6! paragraph-blog text-gray-300 leading-normal md:leading-relaxed">
               {block.text}
             </p>
           );
         case "heading":
           return (
-            <h3
-              key={index}
-              className="text-2xl font-bold text-white mt-8! mb-4!"
-            >
+            <h3 key={index} className="text-2xl font-bold text-white mt-8! mb-4!">
               {block.text}
             </h3>
           );
@@ -225,6 +213,7 @@ const BlogDetailPage = () => {
       </div>
     </section>
   );
-};
+};;
+
 
 export default BlogDetailPage;
