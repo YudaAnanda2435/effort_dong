@@ -30,6 +30,8 @@ function App() {
 
     requestAnimationFrame(raf);
 
+    lenis.scrollTo(0, { immediate: true });
+
     // Cleanup
     return () => {
       lenis.destroy();
