@@ -28,7 +28,7 @@ const ProductsSection = ({ onPreview }) => {
               Bikin Happy Birthday atau happy yang lain? disini aja.
             </p>
           </div>
-          <div className="product-nav h-0">
+          <div className="product-nav hidden! sm:flex! h-0">
             <div className="swiper-button-prev product-prev text-seccondary!"></div>
             <div className="swiper-button-next product-next text-seccondary!"></div>
           </div>

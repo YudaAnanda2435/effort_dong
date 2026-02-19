@@ -21,7 +21,11 @@ const ServicesSection = () => {
     <section className="services section bg-seccondary" id="services">
       <div className="container">
         <div className="section-title">
-          <h2 className="text-[32px] sm:text-[50px]" data-aos="fade-up" data-aos-delay="100">
+          <h2
+            className="text-[32px] sm:text-[50px]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Jadi di Effort.Dong ini kamu bisa dapat apa?
           </h2>
           <p data-aos="fade-up" data-aos-delay="200">
@@ -29,11 +33,11 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="services-grid  no-scrollbar">
+        <div className="services-grid no-scrollbar!">
           {services.map((service, index) => (
             // 1. DIV PEMBUNGKUS (WRAPPER) UNTUK AOS
             // Grid akan mengatur div ini sebagai kolom
-            <div key={index} data-aos="fade-up" data-aos-delay={index * 200}>
+            <div key={index} data-aos="zoom-in" data-aos-delay={index * 200}>
               {/* 2. DIV KARTU ASLI UNTUK HOVER */}
               {/* Hapus data-aos dari sini */}
               <div className="service-card">

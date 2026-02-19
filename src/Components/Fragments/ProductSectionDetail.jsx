@@ -67,11 +67,9 @@ const ProductDetail = ({ onPreview }) => {
             </div>
 
             {/* KOLOM KANAN: INFO */}
-            <div className="product-info space-y-6!   [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="product-info space-y-6!  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex flex-col">
-                <h1
-                  className="text-3xl md:text-4xl flex text-start font-bold text-seccondary mb-2!"
-                >
+                <h1 className="text-3xl md:text-4xl flex text-start font-bold text-seccondary mb-2!">
                   {product.title}
                 </h1>
                 <p className=" font-semibold text-seccondary">
@@ -110,14 +108,14 @@ const ProductDetail = ({ onPreview }) => {
                 <a
                   target="_blank"
                   href={product.form}
-                  className="flex-1 bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary! hover:border hover:border-seccondary text-dark! py-3! w-full rounded-sm font-semibold transition-all shadow-lg flex justify-center items-center gap-2!"
+                  className="flex-1 cursor-pointer bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary! hover:border hover:border-seccondary text-dark! py-3! w-full rounded-sm font-semibold transition-all shadow-lg flex justify-center items-center gap-2!"
                 >
                   Pesan Sekarang <i className="bx bxl-whatsapp text-xl"></i>
                 </a>
                 <a
                   href="https://wa.me/6285559758465"
                   target="_blank"
-                  className="flex-1 border-2 flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-3! w-full rounded-sm font-semibold transition-all"
+                  className=" flex-1 bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary! hover:border hover:border-seccondary text-dark! py-3! w-full rounded-sm font-semibold transition-all shadow-lg flex justify-center items-center gap-2!"
                 >
                   Tanya Dulu
                   <FontAwesomeIcon icon={faHeadset} />
@@ -125,10 +123,10 @@ const ProductDetail = ({ onPreview }) => {
               </div>
               <a
                 href={product.prototype}
-                className="  flex flex-row items-center gap-2 justify-center bg-seccondary hover:bg-dark border border-seccondary hover:text-seccondary! hover:border hover:border-seccondary text-dark! py-3! cursor-pointer px-8 rounded-sm font-semibold transition-all"
+                className=" flex-1 border-2 cursor-pointer flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-3! w-full rounded-sm font-semibold transition-all"
               >
-                <FontAwesomeIcon icon={faMicrochip} />
                 Lihat Prototype
+                <FontAwesomeIcon icon={faMicrochip} />
               </a>
 
               <p className="text-xs text-center text-gray-400 mt-4">

@@ -28,7 +28,7 @@ const OrderStepsSection = () => {
       <div className="container order-container">
         <div className="section-title">
           <h2
-            className="text-seccondary! flex text-start gap-4"
+            className="text-seccondary! w-fit flex items-center text-start gap-2 sm:gap-4"
             data-aos="fade-right"
             data-aos-delay="400"
             data-aos-duration="700"
@@ -75,7 +75,7 @@ const OrderStepsSection = () => {
               {stepsData.map((step) => (
                 <SwiperSlide key={step.id} className="display-slide ">
                   <img src={step.img} alt={step.title} />
-                  <h3 className="text-dark! mb-4!">{step.title}</h3>
+                  <h3 className="text-dark! text-[20px]! md:text-[32px]! mt-2! mb-4!">{step.title}</h3>
                 </SwiperSlide>
               ))}
             </Swiper>

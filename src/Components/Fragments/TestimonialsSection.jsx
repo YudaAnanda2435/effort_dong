@@ -47,7 +47,7 @@ const TestimonialsSection = () => {
               Testimoni asli langsung dari percakapan kami dengan klien.
             </p>
           </div>
-          <div className="product-nav w-full max-w-32  h-0  z-20">
+          <div className="product-nav w-full max-w-32 hidden! sm:flex!  h-0  z-20">
             <div className="swiper-button-prev testimonial-prev  border border-seccondary "></div>
             <div className="swiper-button-next testimonial-next"></div>
           </div>
@@ -67,9 +67,11 @@ const TestimonialsSection = () => {
             pagination={{ clickable: true, el: ".testimonial-pagination" }}
             slidesPerView={"auto"}
             breakpoints={{
-              320: { slidesPerView: 1.2, spaceBetween: 16 },
-              768: { slidesPerView: 2.5, spaceBetween: 24 },
-              1024: { slidesPerView: 4.5, spaceBetween: 24 },
+              320: { slidesPerView: 1.3, spaceBetween: 16 },
+              400: { slidesPerView: 1.8, spaceBetween: 18 },
+              600: { slidesPerView: 2.5, spaceBetween: 24 },
+              768: { slidesPerView: 3.5, spaceBetween: 24 },
+              1024: { slidesPerView: 4.5, spaceBetween: 16 },
             }}
             className="testimonial-swiper"
           >
