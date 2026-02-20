@@ -95,7 +95,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Serius, ini cheat code-nya. Bikin website ucapan di Y-Cardify itu harganya sangat terjangkau (mulai dari harga seblak!). Tapi impact-nya? Kelihatan kayak kado jutaan. Dia bakal ngerasa kamu nyewa programmer profesional buat bikin ini. Padahal cuma modal template premium dari kita.",
+        text: "Serius, ini cheat code-nya. Bikin website ucapan di Effort.Dong itu harganya sangat terjangkau (mulai dari harga seblak!). Tapi impact-nya? Kelihatan kayak kado jutaan. Dia bakal ngerasa kamu nyewa programmer profesional buat bikin ini. Padahal cuma modal template premium dari kita.",
       },
       {
         type: "heading",
@@ -374,7 +374,7 @@ export const blogs = [
       },
       {
         type: "paragraph",
-        text: "Coba bikin website di Y-Cardify, tapi isinya jangan foto bagus doang. Selipin satu section khusus judulnya 'Behind The Scenes' atau 'Realita Kita'. Isinya foto-foto konyol kalian.",
+        text: "Coba bikin website di Effort.Dong, tapi isinya jangan foto bagus doang. Selipin satu section khusus judulnya 'Behind The Scenes' atau 'Realita Kita'. Isinya foto-foto konyol kalian.",
       },
       {
         type: "paragraph",

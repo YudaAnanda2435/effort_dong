@@ -150,7 +150,7 @@ const BlogDetailPage = () => {
               </h3>
               <p>
                 Jangan menunggu momen spesial untuk memberikan kejutan. Website
-                ucapan dari Y-Cardify bisa menjadi arsip kenangan digital yang
+                ucapan dari Effort.Dong bisa menjadi arsip kenangan digital yang
                 abadi selamanya di internet.
               </p>
             </div>

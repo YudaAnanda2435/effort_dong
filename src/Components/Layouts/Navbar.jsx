@@ -101,7 +101,7 @@ const Navbar = () => {
                     : item === "order-steps"
                       ? "Cara Pesan"
                       : item === "blog"
-                        ? "Blogs"
+                        ? "Blog"
                         : item.charAt(0).toUpperCase() + item.slice(1)}
                 </a>
               </Link>

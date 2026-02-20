@@ -11,7 +11,7 @@ export const products = [
   {
     id: 1,
     badge: "+9",
-    price: 150000,
+    price: 35000,
     img: White1,
     title: "For My One and Only",
     video: "https://www.youtube.com/embed/1Ee_3m2cZcQ",
@@ -32,7 +32,7 @@ export const products = [
   {
     id: 2,
     badge: "+8",
-    price: 150000,
+    price: 50000,
     img: Blue4Product,
     title: "All My Love for You",
     kode: "A2",
@@ -54,7 +54,7 @@ export const products = [
   {
     id: 3,
     badge: "+12",
-    price: 150000,
+    price: 35000,
     img: Running,
     title: "Just for You",
     kode: "A3",
@@ -72,7 +72,7 @@ export const products = [
   {
     id: 4,
     badge: "+7",
-    price: 150000,
+    price: 50000,
     img: Game,
     title: "Because You Matter",
     kode: "A4",
@@ -90,7 +90,7 @@ export const products = [
   {
     id: 5,
     badge: "+10",
-    price: 150000,
+    price: 35000,
     img: PinkPw,
     title: "A Little Gift for You",
     kode: "A5",
@@ -108,7 +108,7 @@ export const products = [
   {
     id: 6,
     badge: "+6",
-    price: 150000,
+    price: 25000,
     img: PinkSimple,
     kode: "A6",
     title: "For My One and Only",
@@ -126,7 +126,7 @@ export const products = [
   {
     id: 7,
     badge: "+13",
-    price: 150000,
+    price: 50000,
     img: Retro,
     title: "Today We Celebrate You",
     kode: "A7",
@@ -144,7 +144,7 @@ export const products = [
   {
     id: 8,
     badge: "+13",
-    price: 150000,
+    price: 50000,
     img: Coklat4,
     title: "For You, My Love",
     kode: "A8",
