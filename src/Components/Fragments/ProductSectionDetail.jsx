@@ -122,8 +122,9 @@ const ProductDetail = ({ onPreview }) => {
                 </a>
               </div>
               <a
+                target="_blank"
                 href={product.prototype}
-                className=" flex-1 border-2 cursor-pointer flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-3! w-full rounded-sm font-semibold transition-all"
+                className="flex-1 border-2 cursor-pointer flex flex-row items-center gap-2 justify-center border-gray-300 hover:border-gray-500 text-seccondary py-3! w-full rounded-sm font-semibold transition-all"
               >
                 Lihat Prototype
                 <FontAwesomeIcon icon={faMicrochip} />

@@ -1197,7 +1197,7 @@ strong {
 
 /* Overlay pada gambar produk */
 .product-image-container {
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative; /* Diubah dari kode sebelumnya */
 }
 

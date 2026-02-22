@@ -8,7 +8,8 @@ import "swiper/css/pagination";
 
 // Data produk contoh (bisa ditambah sesuai HTML asli)
 
-const ProductsSection = ({ onPreview }) => {
+// const ProductsSection = ({ onPreview }) => {
+const ProductsSection = () => {
   return (
     <section className="products section" id="products">
       <div className="container">
@@ -57,7 +58,15 @@ const ProductsSection = ({ onPreview }) => {
             {products.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className="product-card">
-                  <div
+                  <div className="product-image-container">
+                    {/* <div className="product-preview-overlay">
+                      <i className="bx bx-play-circle"></i>
+                      <span>Preview</span>
+                    </div> */}
+                    <img src={item.img} alt={item.title} />
+                    <span className="product-badge">{item.badge}</span>
+                  </div>
+                  {/* <div
                     className="product-image-container"
                     onClick={() => onPreview(item.video)}
                   >
@@ -67,7 +76,7 @@ const ProductsSection = ({ onPreview }) => {
                     </div>
                     <img src={item.img} alt={item.title} />
                     <span className="product-badge">{item.badge}</span>
-                  </div>
+                  </div> */}
                   <div className="product-card-content">
                     <h3>{item.title}</h3>
                     <p>{item.category}</p>

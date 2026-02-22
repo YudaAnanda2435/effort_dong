@@ -1,7 +1,7 @@
-import Payment from "../assets/payment.png";
-import Select from "../assets/select.png";
-import Bahan from "../assets/Bahan.png";
-import Hasil from "../assets/hasil.png";
+import Payment from "../assets/steps-order/bayar.png";
+import Select from "../assets/steps-order/pilih.png";
+import Bahan from "../assets/steps-order/isi.png";
+import Hasil from "../assets/steps-order/hasil.png";
 
 export const stepsData = [
   {

@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Testi1 from "../../assets/testi1.png";
-import Testi2 from "../../assets/testi2.png";
-import Testi3 from "../../assets/testi3.png";
-import Testi4 from "../../assets/testi4.png";
-import Testi5 from "../../assets/testi5.png";
-import Testi6 from "../../assets/testi6.png";
-import Testi7 from "../../assets/testi7.png";
-import Testi8 from "../../assets/testi8.png";
-import Testi9 from "../../assets/testi9.png";
+import Testi1 from "../../assets/testimoni/one.png";
+import Testi2 from "../../assets/testimoni/three.png";
+import Testi3 from "../../assets/testimoni/two.png";
+import Testi4 from "../../assets/testimoni/for.png";
+import Testi5 from "../../assets/testimoni/five.png";
+import Testi6 from "../../assets/testimoni/six.png";
+import Testi7 from "../../assets/testimoni/seven.png";
+import Testi8 from "../../assets/testimoni/eight.png";
+import Testi9 from "../../assets/testimoni/nine.png";
 
 const testimonials = [
   Testi1,
@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
             className="testimonial-swiper"
           >
             {testimonials.map((src, index) => (
-              <SwiperSlide className="flex justify-center!" key={index}>
+              <SwiperSlide className="flex justify-center!  py-3!" key={index}>
                 <div className="testimonial-card w-full max-w-[270px]">
                   <img src={src} alt={`Testimoni ${index + 1}`} />
                 </div>
