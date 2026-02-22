@@ -17,11 +17,15 @@ function App() {
       duration: 1000,
       easing: "ease-out",
     });
+    
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
     });
+
+    // --- TAMBAHAN KUNCI: Ekspos Lenis ke window ---
+    window.lenis = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -30,16 +34,17 @@ function App() {
 
     requestAnimationFrame(raf);
 
-    lenis.scrollTo(0, { immediate: true });
+    // Hapus lenis.scrollTo di sini karena akan diurus oleh ScrollToAnchor
 
     // Cleanup
     return () => {
       lenis.destroy();
+      window.lenis = null; // Bersihkan juga saat unmount
     };
   }, []);
 
   return (
-    <>
+   <>
       <ScrollToAnchor />
       <Navbar />
       <Routes>

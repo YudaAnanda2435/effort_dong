@@ -1,29 +1,49 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToAnchor = () => {
   const { pathname, hash } = useLocation();
 
+  // useRef untuk menyimpan history path sebelumnya
+  const lastPathname = useRef(pathname);
+
   useEffect(() => {
-    // Jika ada hash (misal #products) di URL
+    // Cek apakah kita berada di halaman yang sama atau pindah halaman
+    const isSamePage = lastPathname.current === pathname;
+    lastPathname.current = pathname; // Update history dengan path saat ini
+
     if (hash) {
-      // Tunggu sebentar (0ms) agar halaman selesai render dulu
-      setTimeout(() => {
-        // Cari elemen berdasarkan ID (hilangkan tanda #)
-        const element = document.getElementById(hash.replace("#", ""));
+      // JIKA ADA HASH:
+      // Kalau di halaman yang sama, delay 0. Kalau dari halaman lain, delay 400ms.
+      const delay = isSamePage ? 0 : 400;
 
-        if (element) {
-          // Scroll halus ke elemen tersebut
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const timer = setTimeout(() => {
+        if (window.lenis) {
+          window.lenis.scrollTo(hash, { offset: -80 });
+        } else {
+          const element = document.getElementById(hash.replace("#", ""));
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         }
-      }, 0);
-    } else {
-      // Opsi: Jika tidak ada hash, scroll ke paling atas (default behavior)
-      window.scrollTo(0, 0);
-    }
-  }, [pathname, hash]); // Jalankan setiap kali URL berubah
+      }, delay);
 
-  return null; // Component ini tidak merender visual apa-apa
+      return () => clearTimeout(timer);
+    } else {
+      // JIKA TIDAK ADA HASH (Reset ke paling atas)
+      const timer = setTimeout(() => {
+        if (window.lenis) {
+          window.lenis.scrollTo(0, { immediate: true });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }, 50);
+
+      return () => clearTimeout(timer);
+    }
+  }, [pathname, hash]);
+
+  return null;
 };
 
 export default ScrollToAnchor;
