@@ -55,7 +55,7 @@ const ProductDetail = ({ onPreview }) => {
             {/* KOLOM KIRI: GAMBAR */}
             <div className="product-image-wrapper bg-white p-4 rounded-sm shadow-lg border border-gray-100">
               <div className="relative bg-seccondary p-4! sm:p-8! flex  w-full overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={product.img}
                   alt={product.title}
                   className="w-full h-full object-contain sm:object-cover hover:scale-105 rounded-sm transition-transform duration-500"
@@ -67,7 +67,7 @@ const ProductDetail = ({ onPreview }) => {
             </div>
 
             {/* KOLOM KANAN: INFO */}
-            <div className="product-info space-y-6!  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="product-info space-y-4!  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex flex-col">
                 <h1 className="text-3xl md:text-4xl flex text-start font-bold text-seccondary mb-2!">
                   {product.title}
@@ -160,7 +160,7 @@ const ProductDetail = ({ onPreview }) => {
                           <i className="bx bx-play-circle"></i>
                           <span>Preview</span>
                         </div>
-                        <img src={item.img} alt={item.title} />
+                        <img loading="lazy" src={item.img} alt={item.title} />
                         <span className="product-badge">{item.badge}</span>
                       </div>
                       <div className="product-card-content">

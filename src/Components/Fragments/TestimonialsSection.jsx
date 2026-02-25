@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
             {testimonials.map((src, index) => (
               <SwiperSlide className="flex justify-center!  py-3!" key={index}>
                 <div className="testimonial-card w-full max-w-[270px]">
-                  <img src={src} alt={`Testimoni ${index + 1}`} />
+                  <img loading="lazy" src={src} alt={`Testimoni ${index + 1}`} />
                 </div>
               </SwiperSlide>
             ))}

@@ -3,11 +3,9 @@ import Navbar from "../Components/Layouts/Navbar";
 import HeroSection from "../Components/Fragments/HeroSection";
 import ServicesSection from "../Components/Fragments/ServicesSection";
 import ProductsSection from "../Components/Fragments/ProductsSection";
-// import BannerSection from "../Components/Fragments/BannerSection";
 import OrderStepsSection from "../Components/Fragments/OrderStepsSection";
 import TestimonialsSection from "../Components/Fragments/TestimonialsSection";
 // import ConnectSection from "../Components/Fragments/ConnectSection";
-// import Footer from "../Components/Fragments/Footer";
 import VideoModal from "../Components/Fragments/VideoModal";
 import BlogSection from "../Components/Fragments/BlogSection";
 
@@ -32,7 +30,6 @@ const LandingPage = () => {
         <HeroSection />
         <ServicesSection />
         <ProductsSection onPreview={handleOpenPreview} />
-        {/* <BannerSection /> */}
         <OrderStepsSection />
         <TestimonialsSection />
         <BlogSection />

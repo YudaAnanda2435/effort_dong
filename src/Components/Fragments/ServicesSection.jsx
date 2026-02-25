@@ -1,21 +1,6 @@
+import { servicesData } from "../../Data/ServicesData";
+
 const ServicesSection = () => {
-  const services = [
-    {
-      icon: "bx-images",
-      title: "Banyak Pilihan Template",
-      desc: "Pilih dari puluhan template kartu digital premium untuk ulang tahun dan anniversary yang dirancang khusus untuk kamu.",
-    },
-    {
-      icon: "bx-customize",
-      title: "Kustomisasi Tanpa Batas",
-      desc: "Personalisasi kartu pilihanmu dengan foto, video, musik, dan pesan teks untuk sentuhan yang benar-benar personal.",
-    },
-    {
-      icon: "bx-wallet",
-      title: "Pembayaran di Akhir",
-      desc: "Tidak perlu khawatir, revisi dapat dilakukan tanpa batas, dan pembayaran hanya dilakukan setelah website selesai 100%.",
-    },
-  ];
 
   return (
     <section className="services section bg-seccondary" id="services">
@@ -34,7 +19,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="services-grid no-scrollbar!">
-          {services.map((service, index) => (
+          {servicesData.map((service, index) => (
             // 1. DIV PEMBUNGKUS (WRAPPER) UNTUK AOS
             // Grid akan mengatur div ini sebagai kolom
             <div key={index} data-aos="zoom-in" data-aos-delay={index * 200}>

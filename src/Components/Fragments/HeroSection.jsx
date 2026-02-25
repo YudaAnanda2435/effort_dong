@@ -1,13 +1,13 @@
-import Cake from "../../assets/bday.png";
-import Love from "../../assets/love.png";
-import Duck from "../../assets/duck.png";
-import Flower from "../../assets/flower.png";
-import Lips from "../../assets/bibir.png";
-import LovePanah from "../../assets/lovePanah.png";
-import Music from "../../assets/music.png";
-import TwoFlower from "../../assets/twoflower.png";
-import Bumb from "../../assets/bumb.png";
-import Dadu from "../../assets/dadu2.png";
+import Cake from "../../assets/hero/bday.png";
+import Love from "../../assets/hero/love.png";
+import Duck from "../../assets/hero/duck.png";
+import Flower from "../../assets/hero/flower.png";
+import Lips from "../../assets/hero/bibir.png";
+import LovePanah from "../../assets/hero/lovePanah.png";
+import Music from "../../assets/hero/music.png";
+import TwoFlower from "../../assets/hero/twoflower.png";
+import Bumb from "../../assets/hero/bumb.png";
+import Dadu from "../../assets/hero/dadu2.png";
 
 const HeroSection = () => {
   return (
@@ -112,7 +112,7 @@ const HeroSection = () => {
             data-aos-duration="1200"
             data-aos-offset="0"
           >
-            for your{" "}
+            For your{" "}
             <span className="highlight-hero text-dark! italic text-[28px] md:text-[56px]">
               lover?
             </span>

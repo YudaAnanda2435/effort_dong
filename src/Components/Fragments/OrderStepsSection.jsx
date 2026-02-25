@@ -74,7 +74,7 @@ const OrderStepsSection = () => {
             >
               {stepsData.map((step) => (
                 <SwiperSlide key={step.id} className="display-slide ">
-                  <img src={step.img} alt={step.title} />
+                  <img loading="lazy" src={step.img} alt={step.title} />
                   <h3 className="text-dark! text-[20px]! md:text-[32px]! mt-4! mb-4!">{step.title}</h3>
                 </SwiperSlide>
               ))}

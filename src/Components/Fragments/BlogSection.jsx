@@ -39,7 +39,7 @@ const BlogSection = () => {
                 <Link to={`/blog/${blog.id}`}>
                   {/* Gambar & Kategori */}
                   <div className="blog-img-box">
-                    <img src={blog.image} alt={blog.title} />
+                    <img loading="lazy" src={blog.image} alt={blog.title} />
                     <span className="blog-badge">{blog.category}</span>
                   </div>
 

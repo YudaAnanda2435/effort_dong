@@ -23,7 +23,7 @@ export const products = [
     prototype: "https://formyone-andonlyy.vercel.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -43,7 +43,7 @@ export const products = [
     prototype: "https://pinkskiesandyou.netlify.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -63,7 +63,7 @@ export const products = [
     prototype: "https://birthday-for-syifaa.vercel.app",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -83,7 +83,7 @@ export const products = [
     prototype: "https://retro-birthday.vercel.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -103,7 +103,7 @@ export const products = [
     prototype: "https://yourbestdayy.netlify.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -123,7 +123,7 @@ export const products = [
     prototype: "https://brthdymaboy.netlify.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -143,7 +143,7 @@ export const products = [
     prototype: "https://birthdayloml.netlify.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
@@ -164,7 +164,7 @@ export const products = [
     prototype: "https://flipbirthday.vercel.app/",
     features: [
       "Custom Domain (netlify.app / vercel.app)",
-      "web Aktif Lebih Dari 6 Bulan",
+      "web Aktif tidak kurang dari 2 Tahun",
       "Bebas Revisi Unlimited",
       "Design Responsive",
     ],
