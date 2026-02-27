@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "/logo.png";
 // import "./Navbar.css";
 
 const Navbar = () => {
@@ -63,13 +64,14 @@ const Navbar = () => {
       <nav className="navbar container">
         <Link
           to="/"
-          className="nav-logo z-20"
+          className="nav-logo z-20 flex flex-row gap-2 items-center"
           onClick={() => {
             window.scrollTo(0, 0);
             setActiveSection("hero");
           }}
         >
-          Effort.Dong
+          <img className=" w-10" src={ Logo} alt="" />
+          <p>Effort.Dong</p>
         </Link>
 
         <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>

@@ -9,6 +9,8 @@ import BlogDetailPage from "./Pages/BlogDetailPage";
 import ScrollToAnchor from "./Components/Common/ScrollToAnchor";
 import Navbar from "./Components/Layouts/Navbar";
 import Footer from "./Components/Fragments/Footer";
+import FreeGenerator from "./Pages/FreeGenerator";
+import FreeView from "./Pages/FreeView";
 
 function App() {
   useEffect(() => {
@@ -44,13 +46,15 @@ function App() {
   }, []);
 
   return (
-   <>
+    <>
       <ScrollToAnchor />
       <Navbar />
       <Routes>
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/blog/:id" element={<BlogDetailPage />} />
+        <Route path="/buat-gratis" element={<FreeGenerator />} />
+        <Route path="/free-view" element={<FreeView />} />
       </Routes>
       <Footer />
     </>

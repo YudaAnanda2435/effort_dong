@@ -31,7 +31,7 @@ export const products = [
   {
     id: 2,
     badge: "+13",
-    price: 50000,
+    price: 65000,
     img: Coklat4,
     title: "For You, My Love",
     kode: "A8",
@@ -71,7 +71,7 @@ export const products = [
   {
     id: 4,
     badge: "+7",
-    price: 50000,
+    price: 65000,
     img: Game,
     title: "Because You Matter",
     kode: "A4",
@@ -131,7 +131,7 @@ export const products = [
   {
     id: 7,
     badge: "+13",
-    price: 50000,
+    price: 65000,
     img: Retro,
     title: "Today We Celebrate You",
     kode: "A7",
@@ -151,7 +151,7 @@ export const products = [
   {
     id: 8,
     badge: "+8",
-    price: 50000,
+    price: 65000,
     img: Blue4Product,
     title: "All My Love for You",
     kode: "A2",

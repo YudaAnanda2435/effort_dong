@@ -351,7 +351,7 @@ strong {
   transition: all 0.4s ease;
 
   /* Gaya mengambang awal */
-  margin-top: 1rem;
+  margin-block: 1rem;
   max-width: 900px;
   background-color: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(10px);
@@ -403,7 +403,7 @@ strong {
 /* Efek navbar saat scroll */
 .header.scrolled .navbar {
   max-width: 1440px;
-  margin-top: 0;
+  margin-block: 8px;
   border-radius: 0;
   background-color: var(--bg-dark);
   /* backdrop-filter: none; */
