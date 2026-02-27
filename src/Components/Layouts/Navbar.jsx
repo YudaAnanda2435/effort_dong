@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "/logo.png";
+import Logo from "/logo3.png";
 // import "./Navbar.css";
 
 const Navbar = () => {
@@ -64,13 +64,13 @@ const Navbar = () => {
       <nav className="navbar container">
         <Link
           to="/"
-          className="nav-logo z-20 flex flex-row gap-2 items-center"
+          className="nav-logo z-20 flex flex-row gap-1 items-center"
           onClick={() => {
             window.scrollTo(0, 0);
             setActiveSection("hero");
           }}
         >
-          <img className=" w-10" src={ Logo} alt="" />
+          <img className=" w-8" src={ Logo} alt="" />
           <p>Effort.Dong</p>
         </Link>
 
